@@ -25,15 +25,3 @@ def test_order_creation_and_retrieval():
     print("Данные заказа:")
     print(order_data)
 
-# def test_get_order_by_track():
-#     # Создаём заказ
-#     create_response = requests.post(f"{configurations.URL_SERVICE}/api/v1/orders", json=data.order_body)
-#     print  (create_response)
-#     # Сохраняем номер трека
-#     track = create_response.json()["track"]
-#     print(track)
-#     # Получаем заказ по треку
-#     get_response = requests.get(f"{configurations.URL_SERVICE}/api/v1/orders/track", params={"t": track})
-#     print (get_response)
-#     # Проверяем, что код ответа 200
-#     assert get_response.status_code == 200
